@@ -1,0 +1,80 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.introText {
+  margin-bottom: 2rem;
+}
+
+.network {
+  display: flex;
+  justify-content: space-evenly;
+  background: white;
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  /* margin-top: 1px; */
+  height: 3rem;
+  width: 3rem;
+}
+
+.btn {
+  background-color: white;
+  width: max-content;
+  display: flex;
+  padding: 0.75rem 0.75rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 0.4s;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: papayawhip;
+  color: black;
+  border-color: black;
+}
+
+.modal {
+  position: fixed;
+  top: 15vh;
+  left: 5%;
+  width: 90%;
+  background-color: rgb(30, 30, 30);
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 30;
+  animation: slide-down 300ms ease-out forwards;
+  color: papayawhip;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    width: 40rem;
+    left: calc(50% - 20rem);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

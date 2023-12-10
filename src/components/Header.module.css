@@ -1,0 +1,64 @@
+.header {
+  height: 5rem;
+  width: 85vw;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: papayawhip;
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0px 7px 25px white;
+}
+
+.header h1 {
+  color: black;
+}
+
+.link {
+  cursor: pointer;
+  color: black;
+}
+
+.img {
+  object-fit: cover;
+  height: 5rem;
+  width: 100%;
+}
+
+.button {
+  color: black;
+  font-size: large;
+  background-color: #fff;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  background-color: rgb(30, 30, 30);
+  color: papayawhip;
+  transition: all 0.3s;
+  border: none;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.button:active {
+  background-color: papayawhip;
+  color: black;
+}
+
+@media screen and (max-width: 840px) {
+  .header {
+    width: 100%;
+  }
+}
+/* 
+@media screen and (max-width: 800px) {
+  .header {
+    width: 100%;
+  }
+} */

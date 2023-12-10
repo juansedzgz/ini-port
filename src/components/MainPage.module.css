@@ -1,0 +1,115 @@
+.intro {
+  /* height: calc(100vh - 4rem); */
+  height: 100%;
+  width: 80vw;
+  /* max-width: 75rem; */
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  /* background: url("C:/Users/Juan Sebastian/Documents/VSC PROJECTS/Practice/practice-noplan/src/assets/image.png");
+  background-size: cover;
+  background-attachment: fixed; */
+}
+
+.bg {
+  position: absolute;
+  top: 25vh;
+  right: 0;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 50vw;
+  width: 400px;
+  height: 400px;
+  /* width: 28vw;
+  height: 50vh; */
+}
+
+.div {
+  color: papayawhip;
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcome {
+  font-size: 2.5vw;
+  font-weight: 100;
+}
+
+.introduction {
+  font-size: 5vw;
+}
+
+.text {
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 1.2vw;
+}
+
+.name {
+  color: rgb(244, 179, 255);
+}
+
+.button {
+  width: 8rem;
+  background: white;
+  margin: 1rem;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.btnDexter {
+  object-fit: cover;
+  margin: 0 0.25rem;
+  height: 1rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .bg {
+    top: 10vh;
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .bg {
+    top: 5vh;
+    width: 220px;
+    height: 220px;
+    /* display: none; */
+  }
+  .div {
+    font-size: 10vw;
+  }
+  .welcome {
+    font-size: 3.5vw;
+  }
+  .introduction {
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .bg {
+    top: 15vh;
+    width: 150px;
+    height: 150px;
+  }
+  .div {
+    font-size: 10vw;
+  }
+  .welcome {
+    font-size: 3.5vw;
+  }
+  .introduction {
+    font-size: 6vw;
+  }
+}
